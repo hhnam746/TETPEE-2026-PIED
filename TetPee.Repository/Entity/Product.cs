@@ -11,6 +11,8 @@ public class Product: BaseEntity<Guid>, IAuditableEntity
     
     public Guid SellerId { get; set; } // khoá ngoại
     public Seller Seller { get; set; } // mày có mqh với User
+
+    public Inventory Inventory { get; set; }    
     
     public ICollection<OrderDetail> OrderDetail { get; set; } = new List<OrderDetail>();
     public ICollection<ProductCategory> ProductCategory { get; set; } = new List<ProductCategory>();
