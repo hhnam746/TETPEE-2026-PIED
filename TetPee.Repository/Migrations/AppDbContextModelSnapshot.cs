@@ -343,7 +343,6 @@ namespace TetPee.Repository.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<string>("Adress")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTimeOffset>("CreatedAt")
@@ -375,11 +374,9 @@ namespace TetPee.Repository.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Role")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTimeOffset?>("UpdatedAt")
