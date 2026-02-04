@@ -6,6 +6,7 @@ public class Seller: BaseEntity<Guid>, IAuditableEntity
 {
     public string TaxCode { get; set; }
     public string CompanyAddress { get; set; }
+    public string CompanyName { get; set; }
     
     public Guid UserId { get; set; } // khoá ngoại
     public User User { get; set; } // mày có mqh với User
